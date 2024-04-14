@@ -68,10 +68,6 @@ python main.py --config config/psvmlp_partseg_test.yaml
 # please add other paramemters as you wish.
 ```
 
-## Pre-trained models
-Our pre-trained models are available at [here](https://drive.google.com/drive/folders/1t7oLOHfqVtREWWVfLpa8Njby-d_ni_hu?usp=drive_link)
-
-
 ## Acknowledgment
 
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
