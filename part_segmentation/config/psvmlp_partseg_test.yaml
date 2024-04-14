@@ -1,0 +1,17 @@
+#MODEL:
+#  num_matrices: [8, 8, 8, 8]
+#  k_neighbors: 30
+#  calc_scores: softmax
+#  hidden: [[16,16,16],[16,16,16],[16,16,16],[16,16,16]]
+
+TEST:
+  exp_name: pvmlp_partseg_test_230626_insiou_visseg
+  num_points: 2048
+  test_batch_size: 16
+  workers: 6
+  no_cuda: False
+  eval: True
+  dropout: 0.4
+  model_type: insiou  # choose to test the best insiou/clsiou/acc model
+  vis_pred: True  # vis
+  num_vis: 80  # num of points_set for vis

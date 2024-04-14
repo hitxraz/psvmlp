@@ -1,0 +1,20 @@
+MODEL:
+  arch: pvmlp  # backbone network architecture
+
+TRAIN:
+  opt: SGD
+  num_points: 1024
+  pt_norm: False  # input normalization
+  exp_name: pvmlp_230402_CNRR1Dexpand1_SgdEpoch300Bs32C6_VoteEmb
+  batch_size: 32
+  test_batch_size: 16
+  epochs: 300
+  workers: 8
+  warmup_epochs: 10
+#  weight_decay: 0.0002
+  lr: 0.1
+  min_lr: 0.005
+  momentum: 0.9
+  eval: False
+  dropout: 0.5
+  no_cuda: False

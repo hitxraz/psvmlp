@@ -1,0 +1,11 @@
+MODEL:
+  arch: pvmlp  # backbone network architecture
+ 
+
+TEST:
+  exp_name: pvmlp_train_240125_s3d1serial_reflectpad_HDW324
+  num_points: 1024
+  test_batch_size: 16
+  eval: True
+  dropout: 0.5
+  no_cuda: False
